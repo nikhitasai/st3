@@ -1,0 +1,75 @@
+<html>
+<head>
+<style>
+input
+{
+font-style:Calibri;
+}
+body
+{
+padding:15px;
+margin-left:400px;
+}
+button
+{
+background-color:offwhite;
+align:center;
+}
+form
+{
+position:center;
+background-color:lightblue;
+border:solid;
+padding-left:15px;
+width:30%;
+height:60%;
+box-shadow:0 20px 40px rgb(0,0,0);
+}
+/* Styling table */
+
+#text {
+    height: 150px;
+    width: 350px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-top: 6px;
+    margin: auto;
+}
+#table {
+    position: absolute;
+    display: none;
+}
+
+#table tr th {
+    padding: 10px;
+}
+</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ST3</title>
+
+</head>
+<body>
+<form>
+<div class="box1">
+<p style=text-align:center;>Details Form</p><hr>
+<p style=text-align:center;>Name:<input type="text" required></p>
+<p style=text-align:center;>Email Id:<input type="email" required></p>
+<p style=text-align:center;>Mob. No.:<input type="text" required></p>
+<p style=text-align:center;><button type="submit">Submit</button></p>
+<hr>
+ <!-- Div for appending text -->
+        <div id="text">
+            <table id="table">
+                <tr>
+                    <th>Name</th>
+                    <th>Mob. No.</th>
+                    <th>Email Id</th>
+                </tr>
+            </table>
+        </div>
+</form>
